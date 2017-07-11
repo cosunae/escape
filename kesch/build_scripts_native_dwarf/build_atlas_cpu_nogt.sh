@@ -1,0 +1,5 @@
+export BOOST_ROOT=/scratch/cosuna/software/boost_1_59_0
+ecbuild -DENABLE_GRIDTOOLS_STORAGE=OFF -DCMAKE_INSTALL_PREFIX=/scratch/cosuna/dwarf-D-advection-MPDATA/dwarf-D-advection-MPDATA/install/atlas/ -DCMAKE_C_COMPILER=`which gcc`  -DCMAKE_CXX_COMPILER=`which g++` -DCMAKE_Fortran_COMPILER=`which ftn` -DMPI_CXX_COMPILER=`which mpic++` -DMPI_Fortran_COMPILER=`which mpif90` -DCMAKE_CXX_FLAGS=-lpthread -DCMAKE_EXE_LINKER_FLAGS="/apps/escha/UES/RH6.7/easybuild/software/GCC/4.9.3-binutils-2.25/lib64/libstdc++.so -lpthread  /opt/cray/lib64/cce/libmodules64.so.1" -DECMWF_GIT=HTTP -DENABLE_GPU=OFF -DECKIT_PATH=/scratch/cosuna/dwarf-D-advection-MPDATA/dwarf-D-advection-MPDATA/builds/eckit/ -DFCKIT_PATH=/scratch/cosuna/dwarf-D-advection-MPDATA/dwarf-D-advection-MPDATA/builds/fckit ../../sources/atlas
+# -DGRIDTOOLS_STORAGE_PATH=/scratch/cosuna/atlas_integration/gridtools_storage/
+#-DCMAKE_CXX_LINK_EXECUTABLE="gfortran <FLAGS> <CMAKE_CXX_LINK_FLAGS> <LINK_FLAGS> <OBJECTS>  -o <TARGET> <LINK_LIBRARIES>" 
+#remove from linking lines fPIE and -rdynamic
