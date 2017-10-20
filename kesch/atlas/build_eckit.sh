@@ -1,3 +1,1 @@
-cd builds/eckit
-export BOOST_ROOT=/scratch/cosuna/software/boost_1_59_0
-ecbuild -DCMAKE_C_COMPILER=/apps/escha/UES/RH6.7/easybuild/software/GCC/4.9.3-binutils-2.25/bin/gcc  -DCMAKE_CXX_COMPILER=/apps/escha/UES/RH6.7/easybuild/software/GCC/4.9.3-binutils-2.25/bin/g++ -DCMAKE_Fortran_COMPILER=/opt/cray/craype/2.4.2/bin/ftn -DMPI_CXX_COMPILER=/apps/escha/UES/RH6.7/easybuild/software/MVAPICH2/2.2a-GCC-4.9.3-binutils-2.25/bin/mpic++ -DMPI_Fortran_COMPILER=/opt/cray/mvapich2_slurm/2.0.1.4_noslurm/CRAY/8.4/bin/mpif90 -DCMAKE_CXX_FLAGS=-lpthread -DCMAKE_EXE_LINTER_FLAGS=-lpthread  -DECMWF_GIT=HTTP -DENABLE_CUDA=OFF ../../sources/eckit 
+ecbuild -DCMAKE_C_COMPILER=gcc  -DCMAKE_CXX_COMPILER=g++ -DCMAKE_Fortran_COMPILER=/opt/cray/craype/2.4.2/bin/ftn -DMPI_CXX_COMPILER=/apps/escha/UES/RH6.7/easybuild/software/MVAPICH2/2.2a-GCC-4.9.3-binutils-2.25/bin/mpic++  -DCMAKE_CXX_FLAGS=-lpthread -DECMWF_GIT=HTTP ../../eckit 
