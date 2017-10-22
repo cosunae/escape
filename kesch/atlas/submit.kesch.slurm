@@ -11,11 +11,19 @@
 
 echo $LD_LIBRARY_PATH
 
-srun ./src/tests/array/atlas_test_array
-srun ./src/tests/array/atlas_test_vector_kernel
+#srun ./src/tests/array/atlas_test_array
+#srun ./src/tests/array/atlas_test_vector_kernel
 srun ./src/tests/array/atlas_test_array_kernel
 srun ./src/tests/grid/atlas_test_field
-srun ./src/tests/grid/atlas_test_grid_ptr
+#srun ./src/tests/grid/atlas_test_grid_ptr
 srun ./src/tests/grid/atlas_test_grids
 srun ./src/tests/grid/atlas_test_rotation
 srun ./src/tests/grid/atlas_test_state
+
+#src/tests/mesh/atlas_test_connectivit#y
+src/tests/mesh/atlas_test_connectivity_kernel
+#src/tests/mesh/atlas_test_elements
+#src/tests/mesh/atlas_test_ll
+#src/tests/mesh/atlas_test_meshgen3d
+#src/tests/mesh/atlas_test_rgg
+
