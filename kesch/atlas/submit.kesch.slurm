@@ -13,14 +13,20 @@ echo $LD_LIBRARY_PATH
 
 #srun ./src/tests/array/atlas_test_array
 #srun ./src/tests/array/atlas_test_vector_kernel
+echo "Running atlas_test_array_kernel"
 srun ./src/tests/array/atlas_test_array_kernel
+echo "Running atlas_test_field"
 srun ./src/tests/grid/atlas_test_field
 #srun ./src/tests/grid/atlas_test_grid_ptr
+echo "Running atlas_test_grids"
 srun ./src/tests/grid/atlas_test_grids
+echo "Running atlas_test_rotation"
 srun ./src/tests/grid/atlas_test_rotation
+echo "Running atlas_test_rotationatlas_test_rotation"
 srun ./src/tests/grid/atlas_test_state
 
-#src/tests/mesh/atlas_test_connectivit#y
+#src/tests/mesh/atlas_test_connectivity
+echo "Running atlas_test_connectivity_kernel"
 src/tests/mesh/atlas_test_connectivity_kernel
 #src/tests/mesh/atlas_test_elements
 #src/tests/mesh/atlas_test_ll
