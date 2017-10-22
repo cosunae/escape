@@ -11,7 +11,7 @@
 
 echo $LD_LIBRARY_PATH
 
-#srun ./src/tests/array/atlas_test_array
+srun ./src/tests/array/atlas_test_array
 #srun ./src/tests/array/atlas_test_vector_kernel
 echo "Running atlas_test_array_kernel"
 srun ./src/tests/array/atlas_test_array_kernel
