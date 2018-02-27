@@ -18,7 +18,7 @@ if [ $? -ne 0 ] ; then
     exitError 4652 ${LINENO} "Output of test file not found"
 fi
 
-grep -i 'fail\|error\|[^a-zA-z]fault' ${logfile} | grep -v "100% tests passed" | grep -v "0 tests failed out of"
+cat ${logfile} | tr -d '\000' | grep -i 'fail\|error\|[^a-zA-z]fault' | grep -v "100% tests passed" | grep -v "0 tests failed out of"
 
 if [ $? -eq 0 ] ; then
     # echo output to stdout
