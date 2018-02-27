@@ -8,5 +8,5 @@
 #SBATCH --time=00:03:00
 #SBATCH --output=job.out
 
-ctest -V -E  "(atlas_test_metadata|atlas_test_haloexchange|atlas_test_gather|atlas_test_structuredcolumns)"
+ctest -V -E  "(atlas_test_metadata|atlas_test_haloexchange|atlas_test_gather|atlas_test_structuredcolumns|atlas_test_connectivity_kernel)"
 
